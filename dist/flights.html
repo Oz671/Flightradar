@@ -42,47 +42,34 @@
 		</div>
 		<div class="app-body-main-content">
 			<section class="service-section">
-				<h2>Dashboard</h2>
-				<div class="tiles">
-					<article class="tile">
-						<a class="block" href="dep_flights.html">
-							<div class="tile-header">
-								<i class="ph-arrow-up-right"></i>
-								<h3>
-									<span>Departures</span>
-									<span>total</span>
-									<span>last 15min</span>
-									<p class="temp" id="departures-text">32</p>
-								</h3>
-							</div>
-						</a>
-					</article>
-					<article class="tile">
-						<a class="block" href="arr_flight.html">
-							<div class="tile-header">
-								<i class="ph-arrow-down-right"></i>
-								<h3>
-									<span>Arrivals</span>
-									<span>total</span>
-									<span>last 15min</span>
-									<p class="temp" id="departures-text">32</p>
-								</h3>
-							</div>
-						</a>
-					</article>
-					<article class="tile">
-						<div class="tile-header">
-							<i class="ph-thermometer-hot" id="weather-icon"></i>
-							<h3>
-								<span>Temperature</span>
-								<span>at Ben-Gurion</span><span>airport</span>
-								<p class="temp" id="temperature-text">50°</p>
-							</h3>
-						</div>
-					</article>
+				<h2>Flights</h2>
+				<div class="service-section-header">
+					<div class="search-field">
+						<i class="ph-magnifying-glass"></i>
+						<input type="text" placeholder="Flight Number">
+					</div>
+					<div class="dropdown-field">
+						<select>
+							<option>Arrival</option>
+							<option>Departure</option>
+						</select>
+						<i class="ph-caret-down"></i>
+					</div>
+					<button class="flat-button">
+						Search
+					</button>
 				</div>
-				<div class="service-section-footer">
-					<p>Please enjoy this nice dashboard</p>
+				<div class="mobile-only">
+					<button class="flat-button">
+						Toggle search
+					</button>
+				</div>
+			</section>
+			<section class="transfer-section">
+				<div class="transfer-section-header">
+					<h2>Latest flights</h2>
+				</div>
+				<div class="transfers" id="list-of-flights">
 				</div>
 			</section>
 		</div>
